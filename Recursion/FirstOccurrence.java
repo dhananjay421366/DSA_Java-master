@@ -3,7 +3,7 @@ public class FirstOccurrence {
 
     public static int FirstOccurrence(int arr[], int target, int index) {
         if (arr.length == 0) {
-            return 0;
+            return -1;
         }
 
         if (arr[index] == target) {
