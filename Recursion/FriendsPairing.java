@@ -1,4 +1,7 @@
 
+/* 
+ * Formula :: f(n)=f(n−1)+(n−1)×f(n−2)
+ */
 public class FriendsPairing {
 
     public static int FriendsPairing(int n) {
@@ -14,7 +17,7 @@ public class FriendsPairing {
         // single or paired
         int single = FriendsPairing(n - 1);
         // pair
-        int pair = FriendsPairing(n - 1) * FriendsPairing(n - 2);
+        int pair = (n - 1) * FriendsPairing(n - 2);
 
         return single + pair;
 

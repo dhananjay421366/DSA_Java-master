@@ -1,6 +1,7 @@
-import java.util.Arrays;
+
 
 public class DiamondPattern {
+
     public static void DiamondPattern(int n) {
         // 1st half
         for (int i = 1; i <= n; i++) {
@@ -30,10 +31,8 @@ public class DiamondPattern {
         }
     }
 
-  
     public static void main(String[] args) {
         DiamondPattern(5);
-      
 
     }
 }
