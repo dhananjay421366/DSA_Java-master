@@ -1,4 +1,14 @@
+/*
+ * Time Complexity:
 
+Best = O(n log n)
+
+Average = O(n log n)
+
+Worst = O(n log n)
+
+Space Complexity: O(n)
+ */
 public class MergeSort {
 
     public static void printArr(int arr[]) {

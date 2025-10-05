@@ -1,4 +1,6 @@
+
 public class CountingSort {
+
     public static void Counting_sort(int arr[]) {
 
         // Algorithm
@@ -6,7 +8,6 @@ public class CountingSort {
         // 2. create new count arr with length max+1
         // 3.store an freq of each ele in count arr
         // 4. build the sorted arr
-
         // 1. find max from arr
         int largest = 0;
         for (int i = 0; i < arr.length; i++) {
@@ -17,7 +18,6 @@ public class CountingSort {
         int count[] = new int[largest + 1];
 
         // 3.store an freq of each ele in count arr
-
         for (int i = 0; i < arr.length; i++) {
             count[arr[i]]++;
         }
@@ -40,7 +40,7 @@ public class CountingSort {
     }
 
     public static void main(String[] args) {
-        int[] arr = { 12, 7, 9, 14, 16 };
+        int[] arr = {12, 7, 9, 14, 16};
         Counting_sort(arr);
         PrintArr(arr);
 

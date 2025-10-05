@@ -1,4 +1,16 @@
+/*
+ * Time Complexity:
 
+Best / Average = O(n log n)
+
+Worst = O(n²)
+
+Space Complexity:
+
+Best / Average = O(log n)
+
+Worst = O(n)
+ */
 class QuickSort {
 
     public static void quickSort(int arr[], int si, int ei) {

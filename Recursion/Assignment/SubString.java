@@ -1,7 +1,7 @@
 
 class SubString {
 
-    public static int SubString(String str, int i, int j, int n) {
+    public static int SubString(String str, int si, int ei, int n) {
 
         if (n == 1) {
             return 1;
@@ -9,9 +9,11 @@ class SubString {
         if (n == 0) {
             return 0;
         }
-        int res = SubString(str, i + 1, j, n - 1) + SubString(str, i, j - 1, n - 1) - SubString(str, i + 1, j - 1, n - 2);
+        int res = SubString(str, si + 1, ei, n - 1)
+                + SubString(str, si, ei - 1, n - 1)
+                - SubString(str, si + 1, ei - 1, n - 2);
 
-        if (str.charAt(i) == str.charAt(j)) {
+        if (str.charAt(si) == str.charAt(ei)) {
             res++;
         }
 
